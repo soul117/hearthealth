@@ -1,0 +1,7 @@
+<resources>
+    <declare-styleable name="IconifyImageView">
+        <attr name="iconifyIcon" format="string" />
+        <attr name="iconifyColor" format="color|reference" />
+        <attr name="iconifySize" format="dimension|reference" />
+    </declare-styleable>
+</resources>

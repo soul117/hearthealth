@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                                       android:id="@+id/toolbar_main"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:layout_alignParentTop="true"
+                                       android:background="?attr/colorPrimaryDark"
+                                       android:fitsSystemWindows="true"
+                                       android:minHeight="?attr/actionBarSize"
+                                       app:layout_constraintEnd_toEndOf="parent"
+                                       app:layout_constraintLeft_toLeftOf="parent"
+                                       app:layout_constraintLeft_toRightOf="parent"
+                                       app:layout_constraintStart_toStartOf="parent"
+                                       app:layout_constraintTop_toTopOf="parent"
+                                       app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/scroll_view_settings_pa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/toolbar_main"
+                android:fillViewport="true"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/constraint_layout_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_game_time_settings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/card_radius_container_default"
+                app:cardElevation="@dimen/elevation_container_default"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp">
+
+                    <RelativeLayout
+                        android:id="@+id/relative_layout_game_time_settings_title_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.joanzapata.iconify.widget.IconTextView
+                            android:id="@+id/icon_text_view_personal_settings_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/icon_settings_time"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_icon_settings_sub"/>
+
+                        <TextView
+                            android:id="@+id/text_view_settings_personal_user_settings_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_toEndOf="@+id/icon_text_view_personal_settings_icon"
+                            android:layout_toRightOf="@+id/icon_text_view_personal_settings_icon"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="@dimen/padding_side_title_text"
+                            android:paddingLeft="@dimen/padding_side_title_text"
+                            android:paddingRight="@dimen/padding_side_title_text"
+                            android:paddingStart="@dimen/padding_side_title_text"
+                            android:text="@string/title_settings_game_time"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_mode_settings_subtitle"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/view_divider_game_time_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/relative_layout_game_time_settings_title_container"
+                        android:background="@color/app_section_divider"/>
+
+                    <RelativeLayout
+                        android:id="@+id/relative_layout_game_time_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view_divider_game_time_title">
+
+                        <ua.com.crosp.solutions.hearthealthmonitor.common.view.PresetRadioGroup
+                            android:id="@+id/preset_game_time_radio_group"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:layout_marginBottom="13dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <ua.com.crosp.solutions.hearthealthmonitor.common.view.PresetValueButton
+                                android:id="@+id/preset_game_time_value_button_30"
+                                style="@style/PresetLayoutButton.Blue"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:presetButtonUnitText="@string/unit_seconds"
+                                app:presetButtonValueText="@string/title_time_preset_30"/>
+
+                            <ua.com.crosp.solutions.hearthealthmonitor.common.view.PresetValueButton
+                                android:id="@+id/preset_game_time_value_button_60"
+                                style="@style/PresetLayoutButton.Blue"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:presetButtonUnitText="@string/unit_seconds"
+                                app:presetButtonValueText="@string/title_time_preset_60"/>
+
+                            <ua.com.crosp.solutions.hearthealthmonitor.common.view.PresetValueButton
+                                android:id="@+id/preset_game_time_value_button_120"
+                                style="@style/PresetLayoutButton.Blue"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:presetButtonUnitText="@string/unit_seconds"
+                                app:presetButtonValueText="@string/title_time_preset_120"/>
+
+                        </ua.com.crosp.solutions.hearthealthmonitor.common.view.PresetRadioGroup>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout_input_game_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative_layout_game_time_settings"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingEnd="@dimen/padding_side_text_description"
+                            android:paddingLeft="@dimen/padding_side_text_description"
+                            android:paddingRight="@dimen/padding_side_text_description"
+                            android:paddingStart="@dimen/padding_side_text_description"
+                            android:text="@string/text_enter_manually"
+                            android:textSize="16sp"/>
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edit_text_game_time"
+                            style="@style/SettingsEditText"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:hint="@string/title_settings_experiment_time"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="9"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_game_mode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_view_game_time_settings"
+                android:layout_marginBottom="30dp"
+                app:cardCornerRadius="@dimen/card_radius_container_default"
+                app:cardElevation="@dimen/elevation_container_default"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_view_game_time_settings"
+                tools:layout_editor_absoluteX="11dp"
+                tools:layout_editor_absoluteY="324dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp">
+
+                    <RelativeLayout
+                        android:id="@+id/relative_layout_squat_settings_title_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.joanzapata.iconify.widget.IconTextView
+                            android:id="@+id/icon_text_view_squat_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="@string/icon_settings_game_mode"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_icon_settings_sub"/>
+
+                        <TextView
+                            android:id="@+id/text_view_settings_squat_count_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_toEndOf="@+id/icon_text_view_squat_count"
+                            android:layout_toRightOf="@+id/icon_text_view_squat_count"
+                            android:gravity="center_vertical"
+                            android:paddingEnd="@dimen/padding_side_title_text"
+                            android:paddingLeft="@dimen/padding_side_title_text"
+                            android:paddingRight="@dimen/padding_side_title_text"
+                            android:paddingStart="@dimen/padding_side_title_text"
+                            android:text="@string/title_game_mode"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_mode_settings_subtitle"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/view_divider_title_reps"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/relative_layout_squat_settings_title_container"
+                        android:background="@color/app_section_divider"/>
+
+                    <RelativeLayout
+                        android:id="@+id/relative_layout_game_mode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view_divider_title_reps">
+
+                        <Spinner
+                            android:id="@+id/spinner_game_mode"
+                            style="@style/SpinnerGameMode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/ThemeOverlay.AppCompat.Light"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/spinner_game_mode"
+                            android:layout_gravity="top"
+                            android:layout_margin="1dp"
+                            app:cardElevation="3dp"
+                            app:cardUseCompatPadding="true"
+                            app:contentPadding="1dp">
+
+                            <TextView
+                                android:id="@+id/text_view_mode_description"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/padding_bottom_for_floating_button"
+                                android:lineSpacingExtra="4dp"
+                                android:padding="@dimen/padding_text_card_view"
+                                android:textSize="@dimen/text_size_description_common"
+                                tools:text="Description"
+                                />
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button_start_experiment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/margin_bottom_right_floating_button"
+        android:layout_marginEnd="@dimen/margin_bottom_right_floating_button"
+        android:layout_marginRight="@dimen/margin_bottom_right_floating_button"
+        android:src="@drawable/ic_play_arrow"/>
+</RelativeLayout>

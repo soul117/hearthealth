@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FitIconEditText">
+        <attr name="textIcon" format="string"/>
+        <attr name="textIconColor" format="color|reference"/>
+        <attr name="textIconSize" format="dimension|reference"/>
+
+    </declare-styleable>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NavigationItem">
+        <attr name="navItemTitle" format="string" localization="suggested"/>
+        <attr name="navItemFontIcon" format="string"/>
+        <attr name="navItemFontIconSize" format="dimension"/>
+        <attr name="navItemTextColor" format="color"/>
+        <attr name="navItemSelectedColor" format="color"/>
+        <attr name="navItemDrawableIcon" format="reference"/>
+    </declare-styleable>
+
+</resources>

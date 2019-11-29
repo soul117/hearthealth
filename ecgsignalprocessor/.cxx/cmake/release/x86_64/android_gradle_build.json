@@ -1,0 +1,137 @@
+
+{
+	"buildFiles" : 
+	[
+		"D:/Last_backup/android-projects/ecgsignalprocessor/src/main/jni/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"C:\\Users\\soul\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\Last_backup\\android-projects\\ecgsignalprocessor\\.cxx\\cmake\\release\\x86_64 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"demodulation-Release-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "demodulation",
+			"buildCommand" : "C:\\Users\\soul\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\Last_backup\\android-projects\\ecgsignalprocessor\\.cxx\\cmake\\release\\x86_64 --target demodulation",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android24 --gcc-toolchain=C:/Users/soul/AppData/Local/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/soul/AppData/Local/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Ddemodulation_EXPORTS -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\firpm_d\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\firpm_d -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\eigen\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\eigen -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\demodulation\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\demodulation -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\qrsdetection\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\qrsdetection -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\ecgprocessor\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\ecgprocessor -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -std=c++11 -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/Last_backup/android-projects/ecgsignalprocessor/src/main/jni/core/demodulation/src/firs_coefs.cpp",
+					"workingDirectory" : "D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/release/x86_64"
+				}
+			],
+			"output" : "D:/Last_backup/android-projects/ecgsignalprocessor/build/intermediates/cmake/release/obj/x86_64/libdemodulation.so",
+			"toolchain" : "2087285641"
+		},
+		"ecg-signal-processor-Release-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "ecg-signal-processor",
+			"buildCommand" : "C:\\Users\\soul\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\Last_backup\\android-projects\\ecgsignalprocessor\\.cxx\\cmake\\release\\x86_64 --target ecg-signal-processor",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android24 --gcc-toolchain=C:/Users/soul/AppData/Local/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/soul/AppData/Local/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Decg_signal_processor_EXPORTS -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\firpm_d\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\firpm_d -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\eigen\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\eigen -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\demodulation\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\demodulation -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\qrsdetection\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\qrsdetection -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\ecgprocessor\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\ecgprocessor -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -std=c++11 -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/Last_backup/android-projects/ecgsignalprocessor/src/main/jni/ecgprocessorproxy.cpp",
+					"workingDirectory" : "D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/release/x86_64"
+				}
+			],
+			"output" : "D:/Last_backup/android-projects/ecgsignalprocessor/build/intermediates/cmake/release/obj/x86_64/libecg-signal-processor.so",
+			"toolchain" : "2087285641"
+		},
+		"ecgprocessor-Release-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "ecgprocessor",
+			"buildCommand" : "C:\\Users\\soul\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\Last_backup\\android-projects\\ecgsignalprocessor\\.cxx\\cmake\\release\\x86_64 --target ecgprocessor",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android24 --gcc-toolchain=C:/Users/soul/AppData/Local/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/soul/AppData/Local/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Decgprocessor_EXPORTS -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\firpm_d\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\firpm_d -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\eigen\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\eigen -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\demodulation\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\demodulation -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\qrsdetection\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\qrsdetection -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\ecgprocessor\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\ecgprocessor -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -std=c++11 -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/Last_backup/android-projects/ecgsignalprocessor/src/main/jni/core/ecgprocessor/src/ECGProcessor.cpp",
+					"workingDirectory" : "D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/release/x86_64"
+				}
+			],
+			"output" : "D:/Last_backup/android-projects/ecgsignalprocessor/build/intermediates/cmake/release/obj/x86_64/libecgprocessor.so",
+			"toolchain" : "2087285641"
+		},
+		"firpm_d-Release-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "firpm_d",
+			"buildCommand" : "C:\\Users\\soul\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\Last_backup\\android-projects\\ecgsignalprocessor\\.cxx\\cmake\\release\\x86_64 --target firpm_d",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android24 --gcc-toolchain=C:/Users/soul/AppData/Local/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/soul/AppData/Local/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dfirpm_d_EXPORTS -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\firpm_d\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\firpm_d -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\eigen\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\eigen -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\demodulation\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\demodulation -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\qrsdetection\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\qrsdetection -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\ecgprocessor\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\ecgprocessor -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -std=c++11 -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/Last_backup/android-projects/ecgsignalprocessor/src/main/jni/libs/firpm_d/src/band.cpp",
+					"workingDirectory" : "D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android24 --gcc-toolchain=C:/Users/soul/AppData/Local/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/soul/AppData/Local/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dfirpm_d_EXPORTS -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\firpm_d\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\firpm_d -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\eigen\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\eigen -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\demodulation\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\demodulation -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\qrsdetection\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\qrsdetection -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\ecgprocessor\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\ecgprocessor -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -std=c++11 -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/Last_backup/android-projects/ecgsignalprocessor/src/main/jni/libs/firpm_d/src/barycentric.cpp",
+					"workingDirectory" : "D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android24 --gcc-toolchain=C:/Users/soul/AppData/Local/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/soul/AppData/Local/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dfirpm_d_EXPORTS -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\firpm_d\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\firpm_d -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\eigen\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\eigen -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\demodulation\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\demodulation -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\qrsdetection\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\qrsdetection -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\ecgprocessor\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\ecgprocessor -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -std=c++11 -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/Last_backup/android-projects/ecgsignalprocessor/src/main/jni/libs/firpm_d/src/cheby.cpp",
+					"workingDirectory" : "D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android24 --gcc-toolchain=C:/Users/soul/AppData/Local/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/soul/AppData/Local/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dfirpm_d_EXPORTS -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\firpm_d\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\firpm_d -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\eigen\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\eigen -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\demodulation\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\demodulation -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\qrsdetection\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\qrsdetection -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\ecgprocessor\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\ecgprocessor -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -std=c++11 -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/Last_backup/android-projects/ecgsignalprocessor/src/main/jni/libs/firpm_d/src/eigenvalue.cpp",
+					"workingDirectory" : "D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android24 --gcc-toolchain=C:/Users/soul/AppData/Local/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/soul/AppData/Local/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dfirpm_d_EXPORTS -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\firpm_d\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\firpm_d -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\eigen\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\eigen -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\demodulation\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\demodulation -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\qrsdetection\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\qrsdetection -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\ecgprocessor\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\ecgprocessor -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -std=c++11 -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/Last_backup/android-projects/ecgsignalprocessor/src/main/jni/libs/firpm_d/src/pm.cpp",
+					"workingDirectory" : "D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/release/x86_64"
+				}
+			],
+			"output" : "D:/Last_backup/android-projects/ecgsignalprocessor/build/intermediates/cmake/release/obj/x86_64/libfirpm_d.so",
+			"toolchain" : "2087285641"
+		},
+		"qrsdetection-Release-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "qrsdetection",
+			"buildCommand" : "C:\\Users\\soul\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\Last_backup\\android-projects\\ecgsignalprocessor\\.cxx\\cmake\\release\\x86_64 --target qrsdetection",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android24 --gcc-toolchain=C:/Users/soul/AppData/Local/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/soul/AppData/Local/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dqrsdetection_EXPORTS -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\firpm_d\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\firpm_d -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\eigen\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\libs\\eigen -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\demodulation\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\demodulation -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\qrsdetection\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\qrsdetection -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\ecgprocessor\\include -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\core\\ecgprocessor -ID:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -std=c++11 -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/Last_backup/android-projects/ecgsignalprocessor/src/main/jni/core/qrsdetection/src/RPeakDetector.cpp",
+					"workingDirectory" : "D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/release/x86_64"
+				}
+			],
+			"output" : "D:/Last_backup/android-projects/ecgsignalprocessor/build/intermediates/cmake/release/obj/x86_64/libqrsdetection.so",
+			"toolchain" : "2087285641"
+		}
+	},
+	"toolchains" : 
+	{
+		"2087285641" : 
+		{
+			"cCompilerExecutable" : "C:/Users/soul/AppData/Local/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "C:/Users/soul/AppData/Local/Android/Sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+
+    >
+
+    <com.cleveroad.audiovisualization.GLAudioVisualizationView
+        android:id="@+id/audio_visualization_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:av_backgroundColor="@color/app_button_focused"
+        app:av_bubblesRandomizeSizes="true"
+        app:av_bubblesSize="@dimen/size_bubble_ecg_visualization"
+        app:av_layersCount="2"
+        app:av_wavesColors="@array/ecg_wave_colors"
+        app:av_wavesCount="2"
+        app:av_wavesFooterHeight="@dimen/heigh_ecg_visualization_footer"
+        app:av_wavesHeight="@dimen/height_ecg_visualization_wave"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_semitransparent_common">
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_sensor_connected"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_sensor_state"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/image_view_sensor_connection_state"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:contentDescription="@string/content_description_sesnor_connection_state"
+                android:padding="15dp"
+
+                android:src="@drawable/ic_jack_signal"/>
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_sensor_state_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="7">
+
+                <TextView
+                    android:id="@+id/text_view_sensor_state_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/padding_side_title_text"
+                    android:paddingLeft="@dimen/padding_side_title_text"
+                    android:paddingRight="@dimen/padding_side_title_text"
+                    android:paddingStart="@dimen/padding_side_title_text"
+                    android:text="@string/title_settings_recording_time"
+                    android:textColor="@color/app_white_dark"
+                    android:textSize="24sp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_configuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_layout_sensor_connected"
+            android:background="@color/transparent"
+            android:paddingBottom="3dp">
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_time_settings_title_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_semitransparent_common">
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/icon_text_view_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/icon_settings_time"
+                    android:textColor="@color/app_white_dark"
+                    android:textSize="@dimen/text_size_icon_settings_sub"/>
+
+                <TextView
+                    android:id="@+id/text_view_settings_time_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toEndOf="@+id/icon_text_view_time"
+                    android:layout_toRightOf="@+id/icon_text_view_time"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/padding_side_title_text"
+                    android:paddingLeft="@dimen/padding_side_title_text"
+                    android:paddingRight="@dimen/padding_side_title_text"
+                    android:paddingStart="@dimen/padding_side_title_text"
+                    android:text="@string/title_settings_recording_time"
+                    android:textColor="@color/app_white_dark"
+                    android:textSize="@dimen/text_size_mode_settings_subtitle"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_divider_title"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/relative_layout_time_settings_title_container"
+                android:background="@color/app_section_divider"/>
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_time_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_divider_title"
+
+                android:background="@color/transparent">
+
+                <ua.com.crosp.solutions.hearthealthmonitor.common.view.PresetRadioGroup
+                    android:id="@+id/preset_rest_time_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_marginBottom="13dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ua.com.crosp.solutions.hearthealthmonitor.common.view.PresetValueButton
+                        android:id="@+id/preset_time_value_button_30"
+                        style="@style/PresetLayoutButton.Transparent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:presetButtonUnitText="@string/unit_seconds"
+                        app:presetButtonValueText="@string/title_time_preset_30"/>
+
+                    <ua.com.crosp.solutions.hearthealthmonitor.common.view.PresetValueButton
+                        android:id="@+id/preset_time_value_button_60"
+                        style="@style/PresetLayoutButton.Transparent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:presetButtonUnitText="@string/unit_seconds"
+                        app:presetButtonValueText="@string/title_time_preset_60"/>
+
+                    <ua.com.crosp.solutions.hearthealthmonitor.common.view.PresetValueButton
+                        android:id="@+id/preset_time_value_button_120"
+                        style="@style/PresetLayoutButton.Transparent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:presetButtonUnitText="@string/unit_seconds"
+                        app:presetButtonValueText="@string/title_time_preset_120"/>
+
+                </ua.com.crosp.solutions.hearthealthmonitor.common.view.PresetRadioGroup>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_input_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_layout_time_settings"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingEnd="@dimen/padding_side_text_description"
+                    android:paddingLeft="@dimen/padding_side_text_description"
+                    android:paddingRight="@dimen/padding_side_text_description"
+                    android:paddingStart="@dimen/padding_side_text_description"
+                    android:text="@string/text_enter_manually"
+                    android:textColor="@color/app_white_dark"
+                    android:textSize="16sp"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edit_text_rest_time"
+                    style="@style/SettingsEditText"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:hint="@string/title_settings_recording_time"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:textColor="@color/app_white_dark"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_button_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_layout_configuration"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/button_start_recording"
+                style="@style/ButtonBorder.Transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/button_text_start_recording"
+                android:textColor="@color/app_white"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>

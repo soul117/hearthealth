@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="ApplicationMainTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/app_primary</item>
+        <item name="colorPrimaryDark">@color/app_primary_dark</item>
+        <item name="colorAccent">@color/app_accent</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="colorButtonNormal">@color/app_secondary</item>
+        <item name="android:textColorHint">@color/app_hint_color</item>
+        <item name="android:windowBackground">@color/app_background</item>
+        <item name="android:colorButtonNormal" tools:targetApi="lollipop">@color/app_secondary
+        </item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">true</item>
+        <item name="drawerArrowStyle">@style/ToolbarArrowStyle</item>
+    </style>
+
+    <style name="ApplicationMainTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ApplicationMainTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="ApplicationMainTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Heart Health Monitor</string>
+    <string name="action_settings">Settings</string>
+    <string name="mode_title_dormant">Motionless</string>
+    <string name="user_logo">User logo</string>
+    <string name="toolbar_title_mode_settings">Mode settings</string>
+    <string name="title_settings_experiment_time">Experiment Time</string>
+    <string name="unit_seconds">Seconds</string>
+</resources>

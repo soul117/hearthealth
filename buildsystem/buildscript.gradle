@@ -1,0 +1,13 @@
+// Build Tools
+ext.buildscriptDependencies = new Object() {
+    // Variables
+    def gradleVersion = '3.5.0'
+    // Dependencies
+    def gradle = "com.android.tools.build:gradle:${gradleVersion}"
+
+    def realmPluginVersion = '4.2.0'
+    def realmPlugin = "io.realm:realm-gradle-plugin:${realmPluginVersion}"
+
+}
+
+

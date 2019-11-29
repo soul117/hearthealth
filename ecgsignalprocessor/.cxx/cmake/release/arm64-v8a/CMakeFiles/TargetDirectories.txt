@@ -1,0 +1,7 @@
+D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/release/arm64-v8a/CMakeFiles/ecgprocessor.dir
+D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/release/arm64-v8a/CMakeFiles/firpm_d.dir
+D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/release/arm64-v8a/CMakeFiles/demodulation.dir
+D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/release/arm64-v8a/CMakeFiles/qrsdetection.dir
+D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/release/arm64-v8a/CMakeFiles/edit_cache.dir
+D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/release/arm64-v8a/CMakeFiles/ecg-signal-processor.dir
+D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/release/arm64-v8a/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="mode_dormant" type="id"/>
+    <item name="mode_psychoemotional" type="id"/>
+    <item name="mode_physical_activity" type="id"/>
+    <item name="mode_respiratory_gymnastics" type="id"/>
+    <item name="mode_rest_after_activity" type="id"/>
+    <item name="notification" type="id"/>
+    <!--Catch the ball game-->
+    <item name="catch_the_balL_game_mode_activation_only" type="id"/>
+    <item name="catch_the_balL_game_mode_activation_and_stop" type="id"/>
+    <!--Squat   game-->
+    <item name="squat_game_mode_default" type="id"/>
+</resources>

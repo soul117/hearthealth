@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:weightSum="6">
+
+    <ua.com.crosp.solutions.hearthealthmonitor.common.view.IconifyImageView
+        android:id="@+id/iconify_image_view_icon"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:padding="@dimen/padding_mode_item_icon"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_info_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="3.5"
+        android:gravity="center_vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/text_view_title_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/margin_top_mode_item_title"
+            android:textAppearance="@style/TextBase.Title"
+            tools:text="Item title"/>
+
+        <TextView
+            android:id="@+id/text_view_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_view_title_toolbar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignStart="@+id/text_view_title_toolbar"
+            android:layout_below="@id/text_view_title_toolbar"
+            android:layout_marginBottom="@dimen/margin_top_mode_item_title"
+            android:layout_marginTop="@dimen/margin_top_mode_item_title"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="2"
+            android:textAppearance="@style/TextBase.Description"
+            tools:text="Item description"/>
+    </RelativeLayout>
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:id="@+id/icon_text_view_next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/icon_arrow_right"
+        android:textSize="22sp"/>
+</LinearLayout>

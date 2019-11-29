@@ -1,0 +1,31 @@
+[1/6] Building CXX object CMakeFiles/firpm_d.dir/libs/firpm_d/src/band.cpp.o
+[2/6] Building CXX object CMakeFiles/firpm_d.dir/libs/firpm_d/src/barycentric.cpp.o
+[3/6] Building CXX object CMakeFiles/firpm_d.dir/libs/firpm_d/src/cheby.cpp.o
+[4/6] Building CXX object CMakeFiles/firpm_d.dir/libs/firpm_d/src/eigenvalue.cpp.o
+[5/6] Building CXX object CMakeFiles/firpm_d.dir/libs/firpm_d/src/pm.cpp.o
+D:\Last_backup\android-projects\ecgsignalprocessor\src\main\jni\libs\firpm_d\src\pm.cpp:891:17: warning: control may reach end of non-void lambda [-Wreturn-type]
+                };
+                ^
+D:\Last_backup\android-projects\ecgsignalprocessor\src\main\jni\libs\firpm_d\src\pm.cpp:972:9: warning: control may reach end of non-void lambda [-Wreturn-type]
+        };
+        ^
+D:\Last_backup\android-projects\ecgsignalprocessor\src\main\jni\libs\firpm_d\src\pm.cpp:1523:17: warning: control may reach end of non-void lambda [-Wreturn-type]
+                };
+                ^
+D:\Last_backup\android-projects\ecgsignalprocessor\src\main\jni\libs\firpm_d\src\pm.cpp:1687:21: warning: control may reach end of non-void lambda [-Wreturn-type]
+                    };
+                    ^
+D:\Last_backup\android-projects\ecgsignalprocessor\src\main\jni\libs\firpm_d\src\pm.cpp:1814:13: warning: control may reach end of non-void lambda [-Wreturn-type]
+            };
+            ^
+D:\Last_backup\android-projects\ecgsignalprocessor\src\main\jni\libs\firpm_d\src\pm.cpp:1869:5: warning: control may reach end of non-void lambda [-Wreturn-type]
+    };
+    ^
+D:\Last_backup\android-projects\ecgsignalprocessor\src\main\jni\libs\firpm_d\src\pm.cpp:2065:17: warning: control may reach end of non-void lambda [-Wreturn-type]
+                };
+                ^
+D:\Last_backup\android-projects\ecgsignalprocessor\src\main\jni\libs\firpm_d\src\pm.cpp:2201:17: warning: control may reach end of non-void lambda [-Wreturn-type]
+                };
+                ^
+8 warnings generated.
+[6/6] Linking CXX shared library D:\Last_backup\android-projects\ecgsignalprocessor\build\intermediates\cmake\debug\obj\x86\libfirpm_d.so

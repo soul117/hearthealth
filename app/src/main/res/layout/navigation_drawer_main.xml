@@ -1,0 +1,7 @@
+<merge>
+    <!--Navigation items-->
+    <include layout="@layout/navigation_drawer_main_nav_items"/>
+
+    <include layout="@layout/navigation_drawer_divider"/>
+
+</merge>

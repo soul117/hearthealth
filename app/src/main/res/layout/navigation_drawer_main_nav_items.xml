@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/linear_layout_nav_items_container"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ua.com.crosp.solutions.hearthealthmonitor.common.view.NavigationDrawerListItem
+        android:id="@+id/nav_menu_item_modes_list"
+        style="@style/NavigationMenuItem"
+        custom:navItemFontIcon="hm-brain-heart"
+        custom:navItemTitle="@string/nav_item_modes_list"/>
+
+    <ua.com.crosp.solutions.hearthealthmonitor.common.view.NavigationDrawerListItem
+        android:id="@+id/nav_menu_item_results"
+        style="@style/NavigationMenuItem"
+        custom:navItemFontIcon="hm-experiment-results"
+        custom:navItemTitle="@string/nav_item_results"/>
+
+    <ua.com.crosp.solutions.hearthealthmonitor.common.view.NavigationDrawerListItem
+        android:id="@+id/nav_menu_item_realtime"
+        style="@style/NavigationMenuItem"
+        custom:navItemFontIcon="hm-cardiogram"
+        custom:navItemTitle="@string/nav_item_realtime"/>
+
+    <ua.com.crosp.solutions.hearthealthmonitor.common.view.NavigationDrawerListItem
+        android:id="@+id/nav_menu_item_app_settings"
+        style="@style/NavigationMenuItem"
+        custom:navItemFontIcon="hm-heart-gear"
+        custom:navItemTitle="@string/nav_item_app_settings"/>
+</LinearLayout>

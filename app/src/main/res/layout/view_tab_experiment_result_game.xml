@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/content_activity_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context="ua.com.crosp.solutions.hearthealthmonitor.module.modeslist.presentation.view.ModesListFragment">
+
+        <ua.com.crosp.solutions.hearthealthmonitor.common.view.IconDescriptionView
+            android:id="@+id/icon_description_game_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:idvDescription="Description"
+            app:idvIcon="{hm-gamepad}"
+            app:idvIconColor="@color/orange_red"
+            app:idvIconTextSize="14sp"
+            app:idvTitle="@string/text_game_name"/>
+
+        <ua.com.crosp.solutions.hearthealthmonitor.common.view.IconDescriptionView
+            android:id="@+id/icon_description_game_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon_description_game_name"
+            app:idvDescription="Description"
+            app:idvIcon="{hm-bicycle}"
+            app:idvIconColor="@color/orange_red"
+            app:idvIconTextSize="14sp"
+            app:idvTitle="@string/text_game_type"/>
+
+        <ua.com.crosp.solutions.hearthealthmonitor.common.view.IconDescriptionView
+            android:id="@+id/icon_description_game_estimated_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon_description_game_type"
+            app:idvDescription="Description"
+            app:idvIcon="{hm-estimated-time}"
+            app:idvIconColor="@color/orange_red"
+            app:idvIconTextSize="14sp"
+            app:idvTitle="@string/text_game_estimated_time"/>
+
+
+        <ua.com.crosp.solutions.hearthealthmonitor.common.view.IconDescriptionView
+            android:id="@+id/icon_description_game_actual_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon_description_game_estimated_time"
+            app:idvDescription="Description"
+            app:idvIcon="{hm-actual-time}"
+            app:idvIconColor="@color/orange_red"
+            app:idvIconTextSize="14sp"
+            app:idvTitle="@string/text_game_actual_time"/>
+
+        <ua.com.crosp.solutions.hearthealthmonitor.common.view.IconDescriptionView
+            android:id="@+id/icon_description_game_was_interrupted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon_description_game_actual_time"
+            app:idvDescription="Description"
+            app:idvIcon="{hm-interrupt}"
+            app:idvIconColor="@color/orange_red"
+            app:idvIconTextSize="14sp"
+            app:idvTitle="@string/text_game_was_interrupted"/>
+
+        <ua.com.crosp.solutions.hearthealthmonitor.common.view.IconDescriptionView
+            android:id="@+id/icon_description_game_additional_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon_description_game_was_interrupted"
+            android:visibility="gone"
+            app:idvDescription="Description"
+            app:idvIcon="{hm-info}"
+            app:idvIconColor="@color/orange_red"
+            app:idvIconTextSize="14sp"
+            app:idvTitle="@string/text_game_additional_info"/>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

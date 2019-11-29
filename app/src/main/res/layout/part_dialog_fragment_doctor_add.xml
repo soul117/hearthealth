@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextInputLayoutUserSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ua.com.crosp.solutions.hearthealthmonitor.common.view.FitIconEditText
+            android:id="@+id/edit_text_first_name"
+            style="@style/EditTextUserSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_first_name"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName|textNoSuggestions"
+            app:textIcon="@string/text_icon_avatar"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextInputLayoutUserSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ua.com.crosp.solutions.hearthealthmonitor.common.view.FitIconEditText
+            android:id="@+id/edit_text_last_name"
+            style="@style/EditTextUserSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_last_name"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName|textNoSuggestions"
+            app:textIcon="@string/text_icon_avatar"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextInputLayoutUserSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ua.com.crosp.solutions.hearthealthmonitor.common.view.FitIconEditText
+            android:id="@+id/edit_text_email"
+            style="@style/EditTextUserSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            app:textIcon="@string/text_icon_email"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_cancel_create_doctor"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/button_create_new_doctor"
+            android:layout_toStartOf="@+id/button_create_new_doctor"
+            android:text="@string/button_text_cancel"/>
+
+        <Button
+            android:id="@+id/button_create_new_doctor"
+            style="@style/MaterialButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/button_text_add_new_doctor"/>
+    </RelativeLayout>
+
+</LinearLayout>

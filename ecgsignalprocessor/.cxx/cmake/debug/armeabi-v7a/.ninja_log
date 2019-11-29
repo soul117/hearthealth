@@ -1,0 +1,15 @@
+# ninja log v5
+1	20612	0	CMakeFiles/firpm_d.dir/libs/firpm_d/src/band.cpp.o	edd3cd4d851580e4
+3	20616	0	CMakeFiles/firpm_d.dir/libs/firpm_d/src/cheby.cpp.o	c9c771e22fae8df
+2	20766	0	CMakeFiles/firpm_d.dir/libs/firpm_d/src/barycentric.cpp.o	84f508c6431d311
+7	30457	0	CMakeFiles/firpm_d.dir/libs/firpm_d/src/eigenvalue.cpp.o	3c7d9a5e88521105
+10	43914	0	CMakeFiles/firpm_d.dir/libs/firpm_d/src/pm.cpp.o	fe607b4c91db3fcc
+43914	46591	0	D:/Last_backup/android-projects/ecgsignalprocessor/build/intermediates/cmake/debug/obj/armeabi-v7a/libfirpm_d.so	a4fc9a1abc697942
+46591	48977	0	CMakeFiles/demodulation.dir/core/demodulation/src/firs_coefs.cpp.o	61b07aab5549ac5a
+48978	49118	0	D:/Last_backup/android-projects/ecgsignalprocessor/build/intermediates/cmake/debug/obj/armeabi-v7a/libdemodulation.so	c5d7dcf05b86e318
+0	1576	0	CMakeFiles/qrsdetection.dir/core/qrsdetection/src/RPeakDetector.cpp.o	3b98e2fcfef60d02
+1576	1632	0	D:/Last_backup/android-projects/ecgsignalprocessor/build/intermediates/cmake/debug/obj/armeabi-v7a/libqrsdetection.so	1f3e730a537a3e9d
+50	4869	0	CMakeFiles/ecgprocessor.dir/core/ecgprocessor/src/ECGProcessor.cpp.o	d1eaa7c5feb46f09
+4870	4970	0	D:/Last_backup/android-projects/ecgsignalprocessor/build/intermediates/cmake/debug/obj/armeabi-v7a/libecgprocessor.so	2b4e9788e4a2fd91
+6	3036	0	CMakeFiles/ecg-signal-processor.dir/ecgprocessorproxy.cpp.o	3162005c2c65c170
+3036	3135	0	D:/Last_backup/android-projects/ecgsignalprocessor/build/intermediates/cmake/debug/obj/armeabi-v7a/libecg-signal-processor.so	3cc8fbbf33570856

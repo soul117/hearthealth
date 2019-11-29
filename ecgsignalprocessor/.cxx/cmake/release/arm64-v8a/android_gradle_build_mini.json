@@ -1,0 +1,40 @@
+{
+  "buildFiles": [
+    "D:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\soul\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\Last_backup\\android-projects\\ecgsignalprocessor\\.cxx\\cmake\\release\\arm64-v8a --target clean"
+  ],
+  "libraries": {
+    "demodulation-Release-arm64-v8a": {
+      "artifactName": "demodulation",
+      "buildCommand": "C:\\Users\\soul\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\Last_backup\\android-projects\\ecgsignalprocessor\\.cxx\\cmake\\release\\arm64-v8a --target demodulation",
+      "abi": "arm64-v8a",
+      "output": "D:\\Last_backup\\android-projects\\ecgsignalprocessor\\build\\intermediates\\cmake\\release\\obj\\arm64-v8a\\libdemodulation.so"
+    },
+    "ecg-signal-processor-Release-arm64-v8a": {
+      "artifactName": "ecg-signal-processor",
+      "buildCommand": "C:\\Users\\soul\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\Last_backup\\android-projects\\ecgsignalprocessor\\.cxx\\cmake\\release\\arm64-v8a --target ecg-signal-processor",
+      "abi": "arm64-v8a",
+      "output": "D:\\Last_backup\\android-projects\\ecgsignalprocessor\\build\\intermediates\\cmake\\release\\obj\\arm64-v8a\\libecg-signal-processor.so"
+    },
+    "ecgprocessor-Release-arm64-v8a": {
+      "artifactName": "ecgprocessor",
+      "buildCommand": "C:\\Users\\soul\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\Last_backup\\android-projects\\ecgsignalprocessor\\.cxx\\cmake\\release\\arm64-v8a --target ecgprocessor",
+      "abi": "arm64-v8a",
+      "output": "D:\\Last_backup\\android-projects\\ecgsignalprocessor\\build\\intermediates\\cmake\\release\\obj\\arm64-v8a\\libecgprocessor.so"
+    },
+    "firpm_d-Release-arm64-v8a": {
+      "artifactName": "firpm_d",
+      "buildCommand": "C:\\Users\\soul\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\Last_backup\\android-projects\\ecgsignalprocessor\\.cxx\\cmake\\release\\arm64-v8a --target firpm_d",
+      "abi": "arm64-v8a",
+      "output": "D:\\Last_backup\\android-projects\\ecgsignalprocessor\\build\\intermediates\\cmake\\release\\obj\\arm64-v8a\\libfirpm_d.so"
+    },
+    "qrsdetection-Release-arm64-v8a": {
+      "artifactName": "qrsdetection",
+      "buildCommand": "C:\\Users\\soul\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\Last_backup\\android-projects\\ecgsignalprocessor\\.cxx\\cmake\\release\\arm64-v8a --target qrsdetection",
+      "abi": "arm64-v8a",
+      "output": "D:\\Last_backup\\android-projects\\ecgsignalprocessor\\build\\intermediates\\cmake\\release\\obj\\arm64-v8a\\libqrsdetection.so"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+// Retrieve dependencies
+apply from: "$rootProject.projectDir/buildsystem/dependencies.gradle"
+
+
+buildscript {
+    apply from: "$rootProject.projectDir/buildsystem/buildscript.gradle"
+    // Repositories
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath buildscriptDependencies.gradle
+        classpath buildscriptDependencies.realmPlugin
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+repositories {
+    google()
+}

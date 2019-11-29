@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ua.com.crosp.solutions.hearthealthmonitor.common.view.RecyclerViewEmptySupport
+        android:id="@+id/recycler_view_doctor_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relative_layout_button_container"
+        android:layout_alignParentTop="true"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/button_cancel_select_doctor"
+            style="?borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_button"
+            android:layout_marginRight="@dimen/margin_button"
+            android:layout_toLeftOf="@+id/button_select_doctors"
+            android:layout_toStartOf="@+id/button_select_doctors"
+            android:text="@string/button_text_cancel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"/>
+
+        <Button
+            android:id="@+id/button_select_doctors"
+            style="?borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/margin_button"
+            android:layout_marginRight="@dimen/margin_button"
+            android:text="@string/button_text_select_doctors"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"/>
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button_add"
+        style="@style/FloatingButtonAdd"
+        android:layout_width="@dimen/size_floating_button_add"
+        android:layout_height="@dimen/size_floating_button_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="15dp"
+        app:layout_anchor="@id/relative_layout_button_container"
+        app:layout_anchorGravity="bottom|right|end"/>
+
+    <TextView
+        android:id="@+id/text_view_empty_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_doctors_found_add_a_new_one_to_the_list"
+        android:textSize="24sp"
+        android:visibility="gone"/>
+</RelativeLayout>

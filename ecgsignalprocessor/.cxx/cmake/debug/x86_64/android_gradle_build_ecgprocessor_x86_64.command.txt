@@ -1,0 +1,8 @@
+Executable : C:\Users\soul\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\cmake.exe
+arguments : 
+--build
+D:\Last_backup\android-projects\ecgsignalprocessor\.cxx\cmake\debug\x86_64
+--target
+ecgprocessor
+jvmArgs : 
+

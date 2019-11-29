@@ -1,0 +1,9 @@
+<resources>
+    <declare-styleable name="IconDescriptionView">
+        <attr name="idvTitle" format="string"/>
+        <attr name="idvDescription" format="string"/>
+        <attr name="idvIcon" format="string"/>
+        <attr name="idvIconColor" format="color"/>
+        <attr name="idvIconTextSize" format="dimension|reference"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleTimeView">
+        <attr name="ctvLabelText" format="string" />
+        <attr name="ctvLabelTextSize" format="dimension" />
+        <attr name="ctvMarkSize" format="dimension" />
+        <attr name="ctvQuarterMarkSize" format="dimension" />
+        <attr name="ctvTimeNumbersTextSize" format="dimension" />
+        <attr name="ctvQuarterNumberTextSize" format="dimension" />
+        <attr name="ctvPaddingInnerRadius" format="dimension" />
+        <attr name="ctvPaddingQuarterNumber" format="dimension" />
+        <attr name="ctvMarkLineWidth" format="dimension" />
+        <attr name="ctvPaddingLabel" format="dimension" />
+        <attr name="ctvCircleStrokeWidth" format="dimension" />
+        <attr name="ctvCircleHandButtonRadius" format="dimension" />
+        <attr name="ctvMinutesMarkCount" format="integer" />
+        <attr name="ctvUnits" format="enum">
+            <enum name="minutes" value="0" />
+            <enum name="hours" value="1" />
+            <enum name="seconds" value="2" />
+        </attr>
+
+    </declare-styleable>
+</resources>

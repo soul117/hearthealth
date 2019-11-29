@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ecg_wave_colors">
+        <item>@color/app_primary</item>
+        <item>@color/app_secondary</item>
+        <item>@color/app_accent_click</item>
+        <item>@color/app_secondary_dark</item>
+        <item>@color/app_accent</item>
+        <item>@color/app_primary</item>
+        <item>@color/app_primary_dark</item>
+        <item>@color/app_secondary</item>
+    </array>
+    <string-array name="experiment_context_menu">
+        <item>Delete experiment</item>
+        <item>Send to doctor</item>
+    </string-array>
+</resources>

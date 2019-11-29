@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/content_activity_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context="ua.com.crosp.solutions.hearthealthmonitor.module.modeslist.presentation.view.ModesListFragment">
+
+        <ua.com.crosp.solutions.hearthealthmonitor.common.view.IconDescriptionView
+            android:id="@+id/icon_description_feeling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:idvDescription="Description"
+            app:idvIcon="{hm-yoga}"
+            app:idvIconColor="@color/deep_green"
+            app:idvIconTextSize="14sp"
+            app:idvTitle="@string/text_feeling"/>
+
+        <ua.com.crosp.solutions.hearthealthmonitor.common.view.IconDescriptionView
+            android:id="@+id/icon_description_feeling_weather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon_description_feeling"
+            app:idvDescription="Description"
+            app:idvIcon="{hm-cloud-weather}"
+            app:idvIconColor="@color/deep_green"
+            app:idvIconTextSize="14sp"
+            app:idvTitle="@string/text_feeling_weather"/>
+
+        <ua.com.crosp.solutions.hearthealthmonitor.common.view.IconDescriptionView
+            android:id="@+id/icon_description_feeling_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon_description_feeling_weather"
+            app:idvDescription="Description"
+            app:idvIcon="{hm-comment}"
+            app:idvIconColor="@color/deep_green"
+            app:idvIconTextSize="14sp"
+            app:idvTitle="@string/text_feeling_comment"/>
+
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/content_activity_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context="ua.com.crosp.solutions.hearthealthmonitor.module.modeslist.presentation.view.ModesListFragment">
+
+        <ua.com.crosp.solutions.hearthealthmonitor.common.view.IconDescriptionView
+            android:id="@+id/icon_description_ecg_date_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:idvDescription="Description"
+            app:idvIcon="{hm-play}"
+            app:idvIconColor="@color/deep_purple"
+            app:idvIconTextSize="14sp"
+            app:idvTitle="@string/text_ecg_recording_start"/>
+
+        <ua.com.crosp.solutions.hearthealthmonitor.common.view.IconDescriptionView
+            android:id="@+id/icon_description_ecg_date_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon_description_ecg_date_start"
+            app:idvDescription="Description"
+            app:idvIcon="{hm-stop}"
+            app:idvIconColor="@color/deep_purple"
+            app:idvIconTextSize="14sp"
+            app:idvTitle="@string/text_ecg_recording_stop"/>
+
+        <ua.com.crosp.solutions.hearthealthmonitor.common.view.IconDescriptionView
+            android:id="@+id/icon_description_ecg_time_estimated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon_description_ecg_date_end"
+            app:idvDescription="Description"
+            app:idvIcon="{hm-estimated-time}"
+            app:idvIconColor="@color/deep_purple"
+            app:idvIconTextSize="14sp"
+            app:idvTitle="@string/text_ecg_recording_estimated_time"/>
+
+        <ua.com.crosp.solutions.hearthealthmonitor.common.view.IconDescriptionView
+            android:id="@+id/icon_description_ecg_was_interrupted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon_description_ecg_time_estimated"
+            app:idvDescription="Description"
+            app:idvIcon="{hm-interrupt}"
+            app:idvIconColor="@color/deep_purple"
+            app:idvIconTextSize="14sp"
+            app:idvTitle="@string/text_ecg_recording_was_interrupted"/>
+
+        <com.joanzapata.iconify.widget.IconButton
+            android:id="@+id/icon_button_show_ecg"
+            style="@style/ButtonMaterialIcon.Purple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon_description_ecg_was_interrupted"
+            android:layout_margin="7dp"
+            android:text="@string/title_button_icon_show_ecg"
+            android:textSize="20sp"
+            />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

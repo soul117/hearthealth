@@ -1,0 +1,7 @@
+D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/ecgprocessor.dir
+D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/firpm_d.dir
+D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/demodulation.dir
+D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/qrsdetection.dir
+D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/ecg-signal-processor.dir
+D:/Last_backup/android-projects/ecgsignalprocessor/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir

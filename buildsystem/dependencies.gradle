@@ -1,0 +1,118 @@
+ext.testDependencies = new Object() {
+    //Testing
+    def jUnitVersion = '4.12'
+    def espressoVersion = '2.2.2'
+    def junit = "junit:junit:${jUnitVersion}"
+    def espresso = "com.android.support.test.espresso:espresso-core:${espressoVersion}"
+}
+ext.androidSupportDependencies = new Object() {
+    def baseVersion = '25.1.1'
+    def appcompatV7Version = baseVersion
+    def supportV4Version = baseVersion
+    def designVersion = baseVersion
+    def constraintLayoutVersion = '1.0.2'
+    def cardViewVersion = baseVersion
+    def recyclerViewVersion = baseVersion
+    def appcompatV7 = "com.android.support:appcompat-v7:${appcompatV7Version}"
+    def design = "com.android.support:design:${designVersion}"
+    //def supportV4 = "com.android.support:support-v4:${supportV4Version}"
+    //def recyclerViewV7 = "com.android.support:recyclerview-v7:${recyclerViewVersion}"
+    //def cardView = "com.android.support:cardview-v7:${cardViewVersion}"
+    //def constraintLayout = "com.android.support.constraint:constraint-layout:${constraintLayoutVersion}"
+    //def pallete = "com.android.support:palette-v7:${baseVersion}"
+}
+
+ext.fontIconsDependencies = new Object() {
+    def iconicsCoreVersion = '2.8.1@aar'
+    def iconifyCoreVersion = '2.2.2'
+    def androidIconicsCore = "com.mikepenz:iconics-core:${iconicsCoreVersion}"
+    def androidIconifyCore = "com.joanzapata.iconify:android-iconify:${iconifyCoreVersion}"
+}
+ext.mediaDependencies = new Object() {
+    def rxAndroidAudioVersion = '1.4.0'
+    def audioProcessorVersion = '1.5.2'
+    def rxAndroidAudio = "com.github.piasy:rxandroidaudio:${rxAndroidAudioVersion}"
+    def audioProcessor = "com.github.piasy:AudioProcessor:${audioProcessorVersion}"
+}
+ext.chartDependencies = new Object() {
+    def sciChartVersion = '1.0.6'
+    def sciChartCore = "core-release"
+    def sciChartDrawing = "data-release"
+    def sciChartData = "drawing-release"
+    def sciChartCharting = "charting-release"
+    def sciChartExtensions = "extensions-release"
+}
+ext.customViewsDependencies = new Object() {
+    def circleTimeViewVersion = '1.0.6'
+    def countDownViewVersion = '1.2'
+    def iconSwitchVersion = '1.2.2'
+    def mpChartVersion = 'v3.0.2'
+    def audiovisualizationVersion = '1.0.0'
+    def graphViewVersion = '4.2.1'
+    def iconSwitchVersionLocal = 'rmswitch@aar'
+    def materialDesignVersion = '1.5@aar'
+    def circleTimeView = "net.crosp.libs.android:circle-time-view:${circleTimeViewVersion}"
+    def countDownView = "com.serhatsurguvec.libraries:continuablecirclecountdownview:${countDownViewVersion}"
+    def iconSwitch = "com.rm:rmswitch:${iconSwitchVersion}"
+    def iconSwitchLocal = "com.rm:rmswitch:${iconSwitchVersionLocal}"
+    def materialDesign = "com.github.navasmdc:MaterialDesign:${materialDesignVersion}"
+    def audiovisualization = "com.cleveroad:audiovisualization:${audiovisualizationVersion}"
+    def mpChart = "com.github.PhilJay:MPAndroidChart:${mpChartVersion}"
+    def graphView = "com.jjoe64:graphview:${graphViewVersion}"
+}
+ext.notifactionsMessagesDependencies = new Object() {
+    def prettyToastVersion = '0.2.0'
+    def prettyToast = "ua.com.crosp.solutions.library:pretty-toast:${prettyToastVersion}"
+}
+ext.imageDependencies = new Object() {
+    def circleImageVersion = '2.1.0'
+    def circleImage = "de.hdodenhof:circleimageview:${circleImageVersion}"
+}
+ext.utilDependencies = new Object() {
+    def awesomeValidationVersion = '2.0'
+    def utilsCoreVersion = '1.9.3'
+    def awesomeValidation = "com.basgeekball:awesome-validation:${awesomeValidationVersion}"
+    def utilsCore = "com.blankj:utilcode:${utilsCoreVersion}";
+}
+ext.serializationDependencies = new Object() {
+    def moshiVersion = '1.5.0'
+    def moshi = "com.squareup.moshi:moshi:${moshiVersion}"
+}
+ext.collectionDependencies = new Object() {
+    def apacheCommonsGroup = 'org.apache.commons'
+    def apacheCommonsCollectionsVersion = '4.1'
+    def apacheCommonsCollections = "${apacheCommonsGroup}:commons-collections4:${apacheCommonsCollectionsVersion}"
+}
+ext.diDependencies = new Object() {
+    def butterKnifeVersion = "10.2.0"
+    def dagger2Version = "2.13"
+    def javaJSR250Version = "1.0"
+    def butterKnife = "com.jakewharton:butterknife:${butterKnifeVersion}"
+    def dagger2 = "com.google.dagger:dagger:${dagger2Version}"
+    def dagger2Compiler = "com.google.dagger:dagger-compiler:${dagger2Version}"
+    def javaAnnotaionJSR250 = "javax.annotation:jsr250-api:${javaJSR250Version}"
+}
+ext.dialogsDependencies = new Object() {
+    def materialDialogVersion = "0.9.4.5"
+    def materialDatePickerVersion = "3.3.1"
+    def materialDialog = "com.afollestad.material-dialogs:commons:${materialDialogVersion}"
+    def materialDatePicker = "com.wdullaer:materialdatetimepicker:${materialDatePickerVersion}"
+
+}
+ext.permissionDependencies = new Object() {
+    def rxPermissionsVersion = "0.9.4@aar"
+    def rxPermissions = "com.tbruyelle.rxpermissions2:rxpermissions:${rxPermissionsVersion}"
+}
+ext.reactiveDependencies = new Object() {
+    def rxAndroidVersion = "2.0.1"
+    def rxJavaVersion = "2.1.3"
+    def rxBindingsVersion = "2.0.0"
+    def rxBindings = "com.jakewharton.rxbinding2:rxbinding:${rxBindingsVersion}"
+    def rxBindingsDesign = "com.jakewharton.rxbinding2:rxbinding-design:${rxBindingsVersion}"
+    def rxAndroid = "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}"
+    def rxJava = "io.reactivex.rxjava2:rxjava:${rxJavaVersion}"
+}
+ext.annotationProcessors = new Object() {
+    def butterKnifeVersion = "10.2.0"
+    def butterKnife = "com.jakewharton:butterknife-compiler:${butterKnifeVersion}"
+}

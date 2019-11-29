@@ -1,0 +1,314 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_general_settings_title_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/icon_text_view_personal_settings_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/icon_user_info"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_icon_settings_sub"/>
+
+            <TextView
+                android:id="@+id/text_view_settings_personal_user_settings_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toEndOf="@+id/icon_text_view_personal_settings_icon"
+                android:layout_toRightOf="@+id/icon_text_view_personal_settings_icon"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/padding_side_title_text"
+                android:paddingLeft="@dimen/padding_side_title_text"
+                android:paddingRight="@dimen/padding_side_title_text"
+                android:paddingStart="@dimen/padding_side_title_text"
+                android:text="@string/title_user_general_info"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_mode_settings_subtitle"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_general_info_input_container"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relative_layout_general_settings_title_container">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutUserSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ua.com.crosp.solutions.hearthealthmonitor.common.view.FitIconEditText
+                    android:id="@+id/edit_text_first_name"
+                    style="@style/EditTextUserSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_first_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textNoSuggestions"
+                    app:textIcon="@string/text_icon_avatar"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutUserSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ua.com.crosp.solutions.hearthealthmonitor.common.view.FitIconEditText
+                    android:id="@+id/edit_text_last_name"
+                    style="@style/EditTextUserSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_last_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textNoSuggestions"
+                    app:textIcon="@string/text_icon_avatar"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutUserSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ua.com.crosp.solutions.hearthealthmonitor.common.view.FitIconEditText
+                    android:id="@+id/edit_text_phone"
+                    style="@style/EditTextUserSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_phone_number"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone|number"
+                    app:textIcon="@string/text_icon_phone_ringing"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutUserSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ua.com.crosp.solutions.hearthealthmonitor.common.view.FitIconEditText
+                    android:id="@+id/edit_text_about"
+                    style="@style/EditTextUserSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/hint_about"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine"
+                    android:maxLines="3"
+                    app:textIcon="@string/text_icon_info"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutUserSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ua.com.crosp.solutions.hearthealthmonitor.common.view.FitIconEditText
+                    android:id="@+id/edit_text_email"
+                    style="@style/EditTextUserSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/hint_email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    app:textIcon="@string/text_icon_email"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutUserSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ua.com.crosp.solutions.hearthealthmonitor.common.view.FitIconEditText
+                    android:id="@+id/edit_text_date_of_birth"
+                    style="@style/EditTextUserSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="@string/hint_date_of_birth"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName|textNoSuggestions"
+                    app:textIcon="@string/text_icon_calendar"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                style="@style/TextInputLayoutUserSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/icon_text_view_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/icon_genders"
+                    android:textColor="@color/app_icon_color"
+                    android:textSize="@dimen/text_size_icon_settings_sub"/>
+
+                <TextView
+                    android:id="@+id/text_view_selected_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_toEndOf="@+id/icon_text_view_gender"
+                    android:layout_toRightOf="@+id/icon_text_view_gender"
+                    android:paddingEnd="@dimen/padding_side_title_text"
+                    android:paddingLeft="@dimen/padding_side_title_text"
+                    android:paddingRight="@dimen/padding_side_title_text"
+                    android:paddingStart="@dimen/padding_side_title_text"
+                    android:text="@string/switch_female"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_mode_settings_subtitle"/>
+
+                <com.rm.rmswitch.RMSwitch
+                    android:id="@+id/rm_switch_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    app:switchBkgCheckedColor="@color/switch_male_gender"
+                    app:switchBkgNotCheckedColor="@color/switch_female_gender"
+                    app:switchDesign="slim"
+                    app:switchToggleCheckedColor="@color/switch_male_gender"
+                    app:switchToggleCheckedImage="@drawable/ic_male"
+                    app:switchToggleNotCheckedColor="@color/switch_female_gender"
+                    app:switchToggleNotCheckedImage="@drawable/ic_female"/>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_patient_settings_title_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_general_info_input_container">
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/icon_text_view_patient_settings_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/icon_user_doctor_settings"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_icon_settings_sub"/>
+
+            <TextView
+                android:id="@+id/text_view_settings_patient_settings_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_toEndOf="@+id/icon_text_view_patient_settings_icon"
+                android:layout_toRightOf="@+id/icon_text_view_patient_settings_icon"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/padding_side_title_text"
+                android:paddingLeft="@dimen/padding_side_title_text"
+                android:paddingRight="@dimen/padding_side_title_text"
+                android:paddingStart="@dimen/padding_side_title_text"
+                android:text="@string/title_user_patient_info"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_mode_settings_subtitle"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_patient_info_input_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relative_layout_patient_settings_title_container">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutUserSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ua.com.crosp.solutions.hearthealthmonitor.common.view.FitIconEditText
+                    android:id="@+id/edit_text_personal_id"
+                    style="@style/EditTextUserSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_personal_id"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal|number"
+                    app:textIcon="@string/text_icon_personal_id"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayoutUserSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ua.com.crosp.solutions.hearthealthmonitor.common.view.FitIconEditText
+                    android:id="@+id/edit_text_selected_doctor"
+                    style="@style/EditTextUserSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:hint="@string/hint_doctor"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine"
+                    app:textIcon="@string/text_icon_doctor_hat"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

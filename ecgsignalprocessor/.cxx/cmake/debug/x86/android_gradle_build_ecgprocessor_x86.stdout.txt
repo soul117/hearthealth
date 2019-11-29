@@ -1,0 +1,4 @@
+[1/4] Building CXX object CMakeFiles/demodulation.dir/core/demodulation/src/firs_coefs.cpp.o
+[2/4] Linking CXX shared library D:\Last_backup\android-projects\ecgsignalprocessor\build\intermediates\cmake\debug\obj\x86\libdemodulation.so
+[3/4] Building CXX object CMakeFiles/ecgprocessor.dir/core/ecgprocessor/src/ECGProcessor.cpp.o
+[4/4] Linking CXX shared library D:\Last_backup\android-projects\ecgsignalprocessor\build\intermediates\cmake\debug\obj\x86\libecgprocessor.so

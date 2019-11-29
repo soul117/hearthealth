@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="NavigationMenuItem">
+        <item name="android:background">@drawable/selector_navigation_item</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_height">@dimen/height_navigation_drawer_item</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="navItemSelectedColor">@color/app_nav_item_focused</item>
+        <item name="navItemTextColor">@color/white_smoke</item>
+    </style>
+    <!--Base Button Style -->
+
+    <style name="TextBase" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextBase.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TextBase.Title.Secondary">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/app_base_grey</item>
+    </style>
+
+
+    <style name="SettingsEditTextContainer">
+        <item name="android:background">@color/bg_text_input_layout</item>
+    </style>
+
+    <style name="FloatingButtonAdd">
+        <item name="android:src">@drawable/ic_v_add</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:background">@color/app_accent</item>
+    </style>
+
+
+    <style name="TextInputLayoutUserSettings">
+        <item name="android:background">@color/bg_text_input_layout</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/dark_grey</item>
+        <item name="colorAccent">@color/app_primary</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="colorControlNormal">@color/app_primary_dark</item>
+        <item name="colorControlActivated">@color/app_primary</item>
+    </style>
+
+    <style name="MaterialButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:buttonStyle">@style/ButtonTextColor</item>
+        <item name="colorButtonNormal">@color/app_button_pressed</item>
+    </style>
+
+    <style name="ButtonTextColor" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MaterialButton.Cancel" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/red</item>
+    </style>
+
+
+    <style name="EditTextUserSettings">
+        <item name="android:background">@color/bg_text_input_layout</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_edit_text_settings</item>
+        <item name="android:textColorHint">@color/app_icon_color</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="textIconColor">@color/dark_grey</item>
+        <item name="textIconSize">20dp</item>
+    </style>
+
+    <style name="CheckBoxAppPrimary" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/app_primary</item>
+        <item name="colorControlActivated">@color/app_accent_bright</item>
+    </style>
+
+    <style name="TextBase.Description">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/dark_grey</item>
+    </style>
+
+    <style name="TextBase.Description.Main">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <!--Base Button Style -->
+
+    <style name="BaseButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/button_background_material</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- Style for the navigation drawer icon -->
+    <style name="ToolbarArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="SettingsEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CollapsedToolBarStyle" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetLeft">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    <style name="PresetLayoutButton.Transparent">
+        <item name="presetButtonPressedDrawable">
+            @drawable/background_shape_transparent_preset_button__pressed
+        </item>
+        <item name="presetButtonNormalDrawable">
+            @drawable/background_shape_transparent_preset_button
+        </item>
+        <item name="presetButtonPressedTextColor">
+            @color/black
+        </item>
+        <item name="presetButtonValueTextColor">
+            @color/white_smoke
+        </item>
+        <item name="presetButtonUnitTextColor">
+            @color/antique_white
+        </item>
+    </style>
+
+    <style name="PresetLayoutButton">
+        <item name="presetButtonPressedDrawable">
+            @drawable/background_shape_preset_button__pressed
+        </item>
+        <item name="presetButtonNormalDrawable">
+            @drawable/background_shape_preset_button
+        </item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="PresetLayoutButton.Blue">
+        <item name="presetButtonPressedDrawable">
+            @drawable/background_shape_preset_button__pressed
+        </item>
+        <item name="presetButtonNormalDrawable">
+            @drawable/background_shape_preset_button
+        </item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!--    <style name="PresetLayoutButton.Blue">
+            <item name="android:background">@drawable/background_selector_preset_button</item>
+            <item name="android:paddingBottom">10dp</item>
+            <item name="android:clickable">true</item>
+            <item name="android:paddingTop">10dp</item>
+            <item name="android:textStyle">normal</item>
+        </style>-->
+
+    <style name="PresetLayoutButton_ValueText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_time_preset_value</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingEnd" tools:targetApi="jelly_bean_mr1">
+            @dimen/padding_side_title_text
+        </item>
+        <item name="android:paddingLeft">@dimen/padding_side_title_text</item>
+        <item name="android:paddingStart" tools:targetApi="jelly_bean_mr1">
+            @dimen/padding_side_title_text
+        </item>
+        <item name="android:paddingRight">@dimen/padding_side_title_text</item>
+    </style>
+
+    <style name="PresetLayoutButton_UnitText">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text_size_time_preset_unit</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingTop">0dp</item>
+
+    </style>
+
+    <style name="SpinnerGameMode" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/background_spinner_arrow</item>
+    </style>
+
+    <style name="ModeSpinner" parent="Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:dropDownSelector">?attr/selectableItemBackground</item>
+        <item name="android:divider">@null</item>
+        <item name="overlapAnchor">true</item>
+    </style>
+
+    <style name="ButtonBorder.Transparent">
+        <item name="android:background">@drawable/background_button_transparent_border</item>
+    </style>
+
+    <style name="ButtonBorder">
+        <item name="android:padding">10dp</item>
+
+    </style>
+
+    <style name="MusicIconButton">
+        <item name="android:textColor">@color/selector_text_music_button</item>
+        <item name="android:textSize">@dimen/text_size_music_button</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@drawable/background_color_selector_music_button</item>
+        <item name="android:clickable">true</item>
+
+    </style>
+    <!-- This configures the styles for the title within the Toolbar  -->
+    <style name="ParallaxToolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ButtonMaterialIcon" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ButtonMaterialIcon.Purple">
+        <item name="android:background">@drawable/background_button_material_purple</item>
+    </style>
+
+    <style name="ButtonMaterialIcon.Blue">
+        <item name="android:background">@drawable/background_button_material_blue</item>
+    </style>
+
+    <style name="SpinnerGameMode.TextItem" parent="@android:style/TextAppearance.Medium">
+
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/spinner_text</item>
+    </style>
+
+    <style name="CollapsedToolbarBar.Text" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+</resources>

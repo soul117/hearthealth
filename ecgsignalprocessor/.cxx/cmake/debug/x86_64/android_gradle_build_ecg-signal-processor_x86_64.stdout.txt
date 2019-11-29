@@ -1,0 +1,8 @@
+[1/8] Building CXX object CMakeFiles/demodulation.dir/core/demodulation/src/firs_coefs.cpp.o
+[2/8] Building CXX object CMakeFiles/qrsdetection.dir/core/qrsdetection/src/RPeakDetector.cpp.o
+[3/8] Linking CXX shared library D:\Last_backup\android-projects\ecgsignalprocessor\build\intermediates\cmake\debug\obj\x86_64\libdemodulation.so
+[4/8] Building CXX object CMakeFiles/ecgprocessor.dir/core/ecgprocessor/src/ECGProcessor.cpp.o
+[5/8] Linking CXX shared library D:\Last_backup\android-projects\ecgsignalprocessor\build\intermediates\cmake\debug\obj\x86_64\libqrsdetection.so
+[6/8] Linking CXX shared library D:\Last_backup\android-projects\ecgsignalprocessor\build\intermediates\cmake\debug\obj\x86_64\libecgprocessor.so
+[7/8] Building CXX object CMakeFiles/ecg-signal-processor.dir/ecgprocessorproxy.cpp.o
+[8/8] Linking CXX shared library D:\Last_backup\android-projects\ecgsignalprocessor\build\intermediates\cmake\debug\obj\x86_64\libecg-signal-processor.so

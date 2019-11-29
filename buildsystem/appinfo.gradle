@@ -1,0 +1,10 @@
+ext.appInfo = new Object() {
+    //Android
+    def applicationId = "ua.com.crosp.solutions.hearthealthmonitor"
+    def buildToolsVersion = "28.0.3"
+    def minSdkVersion = 24
+    def targetSdkVersion = 28
+    def compileSdkVersion = 28
+    def codeVersion = 1
+    def versionName = "1.0"
+}

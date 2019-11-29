@@ -1,0 +1,40 @@
+{
+  "buildFiles": [
+    "D:\\Last_backup\\android-projects\\ecgsignalprocessor\\src\\main\\jni\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\soul\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\Last_backup\\android-projects\\ecgsignalprocessor\\.cxx\\cmake\\release\\armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "qrsdetection-Release-armeabi-v7a": {
+      "artifactName": "qrsdetection",
+      "buildCommand": "C:\\Users\\soul\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\Last_backup\\android-projects\\ecgsignalprocessor\\.cxx\\cmake\\release\\armeabi-v7a --target qrsdetection",
+      "abi": "armeabi-v7a",
+      "output": "D:\\Last_backup\\android-projects\\ecgsignalprocessor\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a\\libqrsdetection.so"
+    },
+    "ecgprocessor-Release-armeabi-v7a": {
+      "artifactName": "ecgprocessor",
+      "buildCommand": "C:\\Users\\soul\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\Last_backup\\android-projects\\ecgsignalprocessor\\.cxx\\cmake\\release\\armeabi-v7a --target ecgprocessor",
+      "abi": "armeabi-v7a",
+      "output": "D:\\Last_backup\\android-projects\\ecgsignalprocessor\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a\\libecgprocessor.so"
+    },
+    "firpm_d-Release-armeabi-v7a": {
+      "artifactName": "firpm_d",
+      "buildCommand": "C:\\Users\\soul\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\Last_backup\\android-projects\\ecgsignalprocessor\\.cxx\\cmake\\release\\armeabi-v7a --target firpm_d",
+      "abi": "armeabi-v7a",
+      "output": "D:\\Last_backup\\android-projects\\ecgsignalprocessor\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a\\libfirpm_d.so"
+    },
+    "demodulation-Release-armeabi-v7a": {
+      "artifactName": "demodulation",
+      "buildCommand": "C:\\Users\\soul\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\Last_backup\\android-projects\\ecgsignalprocessor\\.cxx\\cmake\\release\\armeabi-v7a --target demodulation",
+      "abi": "armeabi-v7a",
+      "output": "D:\\Last_backup\\android-projects\\ecgsignalprocessor\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a\\libdemodulation.so"
+    },
+    "ecg-signal-processor-Release-armeabi-v7a": {
+      "artifactName": "ecg-signal-processor",
+      "buildCommand": "C:\\Users\\soul\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\Last_backup\\android-projects\\ecgsignalprocessor\\.cxx\\cmake\\release\\armeabi-v7a --target ecg-signal-processor",
+      "abi": "armeabi-v7a",
+      "output": "D:\\Last_backup\\android-projects\\ecgsignalprocessor\\build\\intermediates\\cmake\\release\\obj\\armeabi-v7a\\libecg-signal-processor.so"
+    }
+  }
+}

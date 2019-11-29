@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/relaitve_layout_nav_header_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/height_min_navigation_header"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/circle_image_view_user_logo"
+        android:layout_width="@dimen/size_nav_user_logo"
+        android:layout_height="@dimen/size_nav_user_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_users"
+        app:civ_border_color="@color/app_primary"
+        app:civ_border_width="2dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_name_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circle_image_view_user_logo"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/text_view_user_first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/nav_user_first_name"
+            android:textAppearance="@style/TextBase.Title"
+            android:textColor="@android:color/white"
+            tools:text="First Name"/>
+
+        <TextView
+            android:id="@+id/text_view_user_last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/text_view_user_first_name"
+            android:layout_toEndOf="@+id/text_view_user_first_name"
+            android:layout_toRightOf="@+id/text_view_user_first_name"
+            android:text="@string/nav_user_last_name"
+            android:textAppearance="@style/TextBase.Title"
+            android:textColor="@android:color/white"
+            tools:text="Last Name"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_view_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_layout_name_container"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="@string/nav_user_info"
+        android:textColor="@android:color/white"
+        tools:text="Description"/>
+
+</RelativeLayout>

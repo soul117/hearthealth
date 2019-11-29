@@ -1,0 +1,2 @@
+[1/2] Building CXX object CMakeFiles/qrsdetection.dir/core/qrsdetection/src/RPeakDetector.cpp.o
+[2/2] Linking CXX shared library D:\Last_backup\android-projects\ecgsignalprocessor\build\intermediates\cmake\debug\obj\x86\libqrsdetection.so
